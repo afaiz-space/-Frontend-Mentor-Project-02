@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .bgcolor{
+      background-color: #0a0c1bff;
+    
+    }
+    .attribution { font-size: 11px; color:antiquewhite; text-align: center; }
+    .attribution a { color: hsl(229, 100%, 92%); }
+    
+  .main{
+    margin: 5%   auto 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #1c1938ff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .main-one{
+    width: 30%; 
+    margin: 0 auto;  
+    border-radius: 10px;
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  h2,p{
+    padding: 20px 0 20px 0;
+    text-align: left;
+    color: #f9fafbff;
+  }
+    .main-child-one{
+    margin: 20px auto 20px auto ;
+  }
+  .main-child-two{  
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction: row;    
+  }
+  .child{
+    margin: 30px 0 30px 0;
+    text-transform: uppercase;
+  }
+  .child>h3{
+    color:#f9fafbff;
+  }
+  .child>span{
+    color:#9d9bb1ff;
+  }
+  div>img{
+    border-radius: 10px;
+  }
+  @media screen and (max-width:1000px) {
+    .main{
+      margin: 5%   auto 0 auto;
+      width: 60%;
+      border-radius: 10px;
+      background-color: #1c1938ff;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction: column-reverse;
+    }
+    .main-one{
+      width: 60%; 
+      margin: 0 auto;    
+      border-radius: 10px;
+      display: flex;    
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .main-child-one{
+      width: 100%;
+    }
+    div>h2,p{
+      text-align: center;
+    }
+    .main-child-two{
+      width: 100%;
+      display: flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-direction: column;
+  }
+  .child{
+    margin: 20px 0 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  div>img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: inherit;
+  }
+}
+</style>
+</head>
+<body class="bgcolor">
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Faizan</a>.
+  </div>
+  <div class="main">
+    <div class="main-one">      
+        <div class="main-child-one">
+            <h2 >Get <span style="color:#8549afff">insights</span> that help your business grow.</h1>
+            <p style="color:#9d9bb1ff">Discoer the benefits of data analytics and make better dicision regarding revenue, coustomer experience, and overall efficiency.</p>
+        </div> 
+        <div class="main-child-two">
+          <div class=" child child-one">
+            <h3>10k+</h3>
+            <span>companies</span>
+          </div>
+          <div class=" child child-two">
+            <h3>314</h3>
+            <span>templates</span>
+          </div>
+          <div class=" child child-three">
+            <h3>12M+</h3>
+            <span>Queries</span>
+        </div>
+      </div>
+    </div>
+    <img src="../images/image-header-desktop.jpg" alt="image">
+  </div>
+</body>
+</html>
